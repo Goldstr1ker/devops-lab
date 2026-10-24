@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup tasks DB every 2 minutes (test)
+
+[Timer]
+OnCalendar=*:0/2
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,7 @@
+[Unit]
+Description=Backup tasks DB
+
+[Service]
+Type=oneshot
+User=danya
+ExecStart=/home/danya/devops-lab/app/deploy/backup.sh
