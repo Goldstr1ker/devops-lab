@@ -1,0 +1,15 @@
+[Unit]
+Description=Tasks API
+After=network.target
+
+[Service]
+Type=simple
+User=danya
+WorkingDirectory=/home/danya/devops-lab/app
+EnvironmentFile=/home/danya/devops-lab/app/.env
+ExecStart=/home/danya/devops-lab/app/.venv/bin/uvicorn main:app --host 127.0.0.1 --port 8000
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
