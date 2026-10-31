@@ -2,7 +2,7 @@
 Description=Backup tasks DB every 2 minutes (test)
 
 [Timer]
-OnCalendar=*:0/2
+OnCalendar=*-*-* 03:00
 Persistent=true
 
 [Install]
