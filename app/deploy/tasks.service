@@ -7,7 +7,7 @@ Type=simple
 User=danya
 WorkingDirectory=/home/danya/devops-lab/app
 EnvironmentFile=/home/danya/devops-lab/app/.env
-ExecStart=/home/danya/devops-lab/app/.venv/bin/uvicorn main:app --host 127.0.0.1 --port 8000
+ExecStart=/home/danya/devops-lab/app/.venv/bin/uvicorn main:app --host 127.0.0.1 --port ${APP_PORT}
 Restart=on-failure
 RestartSec=5
 
